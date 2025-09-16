@@ -1,7 +1,7 @@
 // Call Stack
 console.log("Hello"); 
 
-// Event Queue
+// Callback Queue
 setTimeout(() => { 
     console.log("Time")
 }, 0); 

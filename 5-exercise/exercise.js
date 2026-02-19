@@ -13,7 +13,7 @@ fetch('https://jsonplaceholder.typicode.com/users/')
       // 1. Filter even IDs
 
       const evenIds = users.filter((user) => (user.id%2) == 0);
-      console.log(evenIds);
+      //console.log(evenIds);
 
       // 2. Map to clean objects {id, name, city}
 
@@ -22,7 +22,7 @@ fetch('https://jsonplaceholder.typicode.com/users/')
         name: `${user.name}`,
         city: `${user.address.city}`,
       }));
-      console.log(transform);
+      //console.log(transform);
 
       // 3. Add Guest User at the start using Spread (...)
 
@@ -50,9 +50,9 @@ fetch('https://jsonplaceholder.typicode.com/users/')
           }
       }
       const spread = [guestUser, ...users]
-      console.log(spread);
+      //console.log(spread);
       
-      console.log("--- Statistics ---");
+      //console.log("--- Statistics ---");
       // 4. Reduce to count total characters in names
 
       const reduce = users.reduce((total, user) => total + user.username.length, 0);
